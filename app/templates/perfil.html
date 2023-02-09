@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
   <div class="card" style="max-width: 1000px !important; margin-left: auto !important; margin-right: auto !important;">
-    <img class="card-img-top" src="{{data.image}}" alt="Card image cap">
+    <img class="card-img-top" src="{{data[0].image}}" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title">Name: {{data[0].name}}</h5>
     <ul class="list-group list-group-flush"></ul>
