@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card" style="max-width: 1000px !important; margin-left: auto !important; margin-right: auto !important;">
+    <img class="card-img-top" src="{{data.image}}" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">Name: {{data[0].name}}</h5>
+    <ul class="list-group list-group-flush"></ul>
+      <li class="list-group-item">Species: {{data[0].species}}</li> 
+      <li class="list-group-item">Gender: {{data[0].gender}}</li>
+      <li class="list-group-item">Status: {{data[0].status}}</li>
+    </ul>
+    </div>
+  </div>
+{% endblock %}

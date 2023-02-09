@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block content %}
+
+<h1 class="text-center">Personajes Rick and Morty</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            {% for personajes in personajes %}
+            <div class="col-md-4">
+                <ul>
+                    <div class="image-container">
+                            <img src = {{personajes.image}}
+                                alt = "Personaje">
+                    </div>
+                    <li>
+                        <h3> {{personajes.id}}  {{personajes.name}} </h3>   
+                    </li>
+            
+                    <li>
+                        {{personajes.status}}
+                    </li>
+            
+                    <li>
+                        {{personajes.species}} 
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+ {% endblock %}
